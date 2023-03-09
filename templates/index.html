@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %} family page {% endblock %}
+{% block content %}
+<h1><b>FAMILY</b></h1>
+<p>8th of March</p>
+<div class="row">
+</div>
+<img within="0,1" src="https://scontent.cdninstagram.com/v/t1.15752-9/335067879_769446191281996_4373196520734475640_n.jpg?stp=dst-jpg_p480x480&_nc_cat=111&ccb=1-7&_nc_sid=5a057b&_nc_ohc=3CRU-t-muTwAX-VcRPB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.cdninstagram.com&oh=03_AdTWcftJQWOsNj3SalRa1tdIrq-0gJEQSg5k1cW-B6ORmA&oe=64311028 " alt="famil">
+{% for names in list_of_names %}
+<p>my name is {{names}}</p>
+{% endfor %}
+{% endblock %}
